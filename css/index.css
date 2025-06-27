@@ -1,3 +1,36 @@
 .red {
     color: red;
 }
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.sideber {
+    width: 30%;
+  margin: 10px 0 10px 0;
+}
+
+.sideber ul {
+      margin: 0px;
+      padding: 0 10px 0 10px;
+}
+
+.sideber li {
+      display: block;
+      margin: 0px 0px 5px 0px;
+      padding: 5px 5px 5px 5px;
+      border-right: solid 2px #cccccc;
+      background-color: #eeeeee;
+}
+
+.sideber a {
+      color: #444444;
+      text-decoration: none;
+}
+.main{
+  width: 70%;
+  padding: 1em;
+  box-sizing: border-box;
+}
