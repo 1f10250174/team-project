@@ -20,7 +20,7 @@
             $('.slider').bxSlider({
                 auto: true,
                 pause: 5000, // 画像がスライドするスピード
-                slideWidth: 400, // 画像の横幅
+                slideWidth: 700, // 画像の横幅
             });
         });
 </script>
@@ -75,99 +75,5 @@
      <p>奈良県奈良市にある都市公園である。国の名勝にして名所でもある。</p>
    </div> 
  </div>   
- <style>
-        body {
-            font-family: 'Noto Serif JP', serif;
-            margin: 0;
-            background: linear-gradient(135deg, #fcf6ba 0%, #ffcab1 100%);
-            min-height: 100vh;
-        }
-        nav {
-            background: rgba(255, 255, 255, 0.75);
-            box-shadow: 0 2px 16px rgba(140, 88, 23, 0.14);
-            padding: 1em 2em;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        nav h2 {
-            margin: 0;
-            color: #7b5527;
-            font-weight: 700;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav li {
-            margin-left: 2em;
-        }
-        nav a {
-            text-decoration: none;
-            color: #7b5527;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: #be782f;
-        }
-        .container {
-            width: min(98vw, 920px);
-            margin: 2em auto;
-            background: rgba(255, 255, 255, 0.92);
-            padding: 2em 2em 2em 2em;
-            border-radius: 22px;
-            box-shadow: 0 8px 28px rgba(96,42,17,0.13);
-        }
-        .spot-card {
-            display: flex;
-            align-items: flex-start;
-            gap: 2em;
-            margin-bottom: 2.2em;
-            background: #fff6e7;
-            border-radius: 18px;
-            box-shadow: 0 3px 18px rgba(191, 141, 65, 0.08);
-            padding: 1.5em;
-            transition: transform 0.18s;
-        }
-        .spot-card:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 8px 36px rgba(191, 141, 65, 0.22);
-        }
-        .spot-card img {
-            width: 210px;
-            border-radius: 13px;
-            box-shadow: 0 2px 13px rgba(120,43,7,0.12);
-            background: #feedbc;
-        }
-        .spot-card .info {
-            flex: 1;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.8em;
-            margin-bottom: 1em;
-            color: #8d6213;
-            letter-spacing: .08em;
-            text-shadow: 0 2px 12px #fff3e5;
-        }
-        /* Responsive */
-        @media (max-width: 700px) {
-            .container {
-                padding: 1em 0.5em;
-            }
-            .spot-card {
-                flex-direction: column;
-                gap: 1em;
-                align-items: flex-start;
-            }
-            .spot-card img {
-                width: 95vw;
-                max-width: 320px;
-            }
-        }
-    </style>
 </body>
 </html>
