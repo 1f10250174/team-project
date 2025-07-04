@@ -4,7 +4,102 @@
         <mata charest="UTF-8">
         <title>チームで作るwebサイト（奈良）</title>
         <link rel="stylesheet" href="css/index.css">
+        <style>
+        body {
+            font-family: 'Noto Serif JP', serif;
+            margin: 0;
+            background: linear-gradient(135deg, #fcf6ba 0%, #ffcab1 100%);
+            min-height: 100vh;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.75);
+            box-shadow: 0 2px 16px rgba(140, 88, 23, 0.14);
+            padding: 1em 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav h2 {
+            margin: 0;
+            color: #7b5527;
+            font-weight: 700;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-left: 2em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #7b5527;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #be782f;
+        }
+        .container {
+            width: min(98vw, 920px);
+            margin: 2em auto;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 2em 2em 2em 2em;
+            border-radius: 22px;
+            box-shadow: 0 8px 28px rgba(96,42,17,0.13);
+        }
+        .spot-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 2em;
+            margin-bottom: 2.2em;
+            background: #fff6e7;
+            border-radius: 18px;
+            box-shadow: 0 3px 18px rgba(191, 141, 65, 0.08);
+            padding: 1.5em;
+            transition: transform 0.18s;
+        }
+        .spot-card:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 36px rgba(191, 141, 65, 0.22);
+        }
+        .spot-card img {
+            width: 210px;
+            border-radius: 13px;
+            box-shadow: 0 2px 13px rgba(120,43,7,0.12);
+            background: #feedbc;
+        }
+        .spot-card .info {
+            flex: 1;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 1em;
+            color: #8d6213;
+            letter-spacing: .08em;
+            text-shadow: 0 2px 12px #fff3e5;
+        }
+        /* Responsive */
+        @media (max-width: 700px) {
+            .container {
+                padding: 1em 0.5em;
+            }
+            .spot-card {
+                flex-direction: column;
+                gap: 1em;
+                align-items: flex-start;
+            }
+            .spot-card img {
+                width: 95vw;
+                max-width: 320px;
+            }
+        }
+    </style>
     </head>
+
     <body>
       <div class="container">
          <div class="sideber">
@@ -22,14 +117,14 @@
              </ul>
           </div>
          <div class="main">
-               <h2><strong>トップページ</strong></h2>
+               <h1><strong>トップページ</strong></h1>
              <p>
               奈良は仏教と政治が深く結びついた都市となり、今現在の奈良県でも、その歴史が垣間見える観光地、風景がたくさん残されている。
               このホームページでは、そんな奈良の魅力を簡潔に、かつ魅力的に伝えていく。
              </p>
              <img src="https://cdn.pixabay.com/photo/2020/07/23/01/16/history-5430076_1280.jpg" width="500" style="display: block;margin: 0 auto;">
-             <p class="red">面積：約3,691㎢（全国31位）</p>
-             <p class="red">人口：約130万人（全国31位）</p>
+             <p>面積：約3,691㎢（全国31位）</p>
+             <p>人口：約130万人（全国31位）</p>
              <h3>歴史</h3>
              <p>
              <li>
@@ -39,6 +134,7 @@
                 現在の奈良市から大和郡山市にまたがる大都市であり、その人口は約１０万人とされている。
              </li>
              </p>
+             <h3></h3>
            </div>
         </div>
     </body>
